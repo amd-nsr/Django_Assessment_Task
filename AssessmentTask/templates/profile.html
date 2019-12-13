@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}Profile{% endblock %}
+
+{% block content %}
+
+{% if user.is_authenticated %}
+  <ul>
+    <li> Username: {{ user.username }} </li>
+    <li> Email: {{ user.email }}</li>
+ <li>
+  <p><a href="{% url 'logout' %}">logout</a></p>
+  <p><a href= "{% url 'password_change' %}" > Change My Password </a></p>
+{% else %}
+  <p>You are not logged in</p>
+  <ul>
+  <li> <a href="{% url 'login' %}">login</a> </li>
+  <li> <a href="{% url 'signup' %}">Sign Up</a> </li>
+  </li>
+  <p><a href="{% url 'password_reset' %}">reset password</a></p>
+  </li>
+  </ul>
+{% endif %}
+
+<ul>
+<li><a href="{% url 'upload-file' %}"> Uplod File </a> </li>
+<li><a href="{% url 'dist-calc' %}"> Calculate the distance between Cairo and Alex using Google Maps API </a> </li>
+<li><a href="{% url 'swagger-docs' %}"> Website API documentation </a> </li>
+</ul>
+{% endblock %}
+ </li>
+</ul>

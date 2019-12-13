@@ -1,0 +1,25 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Subject: Password reset on 127.0.0.1:8000
+From: webmaster@localhost
+To: a7md.bedo@gmail.com
+Date: Wed, 11 Dec 2019 14:34:27 -0000
+Message-ID: <157607486759.4880.1456488294718325736@DESKTOP-D86MS4V>
+
+
+You're receiving this email because you requested a password reset for your user account at 127.0.0.1:8000.
+
+Please go to the following page and choose a new password:
+
+http://127.0.0.1:8000/accounts/reset/MQ/5c6-8366205c092fe1f80235/
+
+Your username, in case you've forgotten: superAdmin
+
+Thanks for using our site!
+
+The 127.0.0.1:8000 team
+
+
+
+-------------------------------------------------------------------------------
