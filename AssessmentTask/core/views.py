@@ -12,6 +12,7 @@ from .serializers import FileSerializer
 from .api_keys import GOOGLE_MAPS_API_KEY
 
 def dist_calc(request):
+    
     gmaps = googlemaps.Client(key=GOOGLE_MAPS_API_KEY) 
     dist = gmaps.distance_matrix('Alexandria','Cairo')['rows'][0]['elements'][0] 
     key = GOOGLE_MAPS_API_KEY
